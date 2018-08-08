@@ -19,12 +19,8 @@ class AutomateEverything {
         driver.executeScript("scroll(0, 500);");
         driver.findElement(By.id("sex-1")).click();
         driver.findElement(By.id("exp-4")).click();
-//        List<WebElement> elements = driver.findElements(By.cssSelector("#sex-1, #exp-4"));
-//        for (WebElement e : elements){
-//            e.click();
-//        }
         driver.executeScript("scroll(0, 500);");
-        driver.findElement(By.className("datepicker")).sendKeys("2018-08-06");
+        driver.findElement(By.id("datepicker")).sendKeys("2018-08-06");
         driver.findElementById("profession-0").click();
         driver.findElementById("profession-1").click();
         driver.executeScript("scroll(0, 800);");
